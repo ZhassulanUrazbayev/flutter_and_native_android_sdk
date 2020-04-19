@@ -7,10 +7,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   static const platform = const MethodChannel(
       'urazbayev.zhassulan.flutternativesdkconnection');
-
-//  MyApp({Key key}) : super(key: key) {
-//    platform.setMethodCallHandler(_handleMethod);
-//  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

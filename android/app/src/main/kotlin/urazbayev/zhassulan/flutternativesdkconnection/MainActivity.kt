@@ -25,7 +25,6 @@ class MainActivity: FlutterActivity() {
         GeneratedPluginRegistrant.registerWith(this)
 
         MethodChannel( flutterView, CHANNEL).setMethodCallHandler { call, result ->
-            // manage method calls here
             if (call.method == "showNativeView") {
                 timeToStartCheckoutTest()
                 result.success(true)
